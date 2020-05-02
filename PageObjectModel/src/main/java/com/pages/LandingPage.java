@@ -17,6 +17,7 @@ public class LandingPage extends WebDriverUtils implements LandingPageProperties
 	}
 	
 	public void clickSignIn() {
+		System.out.println("New Line");
 		click(SIGNIN_LOCATOR);
 	}
 	
