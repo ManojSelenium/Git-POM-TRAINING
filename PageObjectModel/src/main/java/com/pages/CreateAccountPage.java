@@ -20,6 +20,7 @@ public class CreateAccountPage extends WebDriverUtils implements CreateAccountPa
 	}
 	
 	public void enterFirstName(CreateUserBean createUserBean) {
+		System.out.println("FIRST NAME ENTERED");
 		new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.id("customer_firstname")));
 		enterText(FIRSTNAME_LOCATOR, createUserBean.getFirstName());
 		
